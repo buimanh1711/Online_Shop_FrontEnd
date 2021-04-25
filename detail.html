@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <title>Shop online</title>
+  <script src="https://kit.fontawesome.com/cc8d84a666.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="product_detail.css" type="text/css">
+  <link rel="stylesheet" href="thinkview_detail.css" type="text/css">
+  <link rel="stylesheet" href="thinkview_base.css" type="text/css">
+  <link rel="stylesheet" href="thinkview_rps.css" type="text/css">
+  <link rel="stylesheet" href="thinkview_rps_library.css" type="text/css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="app__header">
+    <div class="container">
+      <div class='header-container'>
+        <div class="grid__header-search__form">
+          <div class="logo">
+            <img src="img/thinklogo.png" class="logo__img logo--normal">
+            <img src="img/thinklogo_rps.png" class="logo__img logo--rps">
+          </div>
+          <div class="input__form">
+            <input type="text" class="input__form-input">
+            <button class="search__button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class='mb-menu-btn'>
+          <button>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="grid__header-selection">
+          <ul class="grid__header-selection-options">
+            <li class="selection-options-items">
+              <a href="">
+                <i class="header-selection-icon fas fa-laptop"></i>
+                <span>LAPTOP</span>
+              </a>
+            </li>
+            <li class="selection-options-items">
+              <a href="">
+                <i class="header-selection-icon fas fa-desktop"></i>
+                <span>PC-WORKSTATION</span>
+              </a>
+            </li>
+            <li class="selection-options-items">
+              <a href="">
+                <i class="header-selection-icon fas fa-headphones"></i>
+                <span>LINH KIỆN</span>
+
+              </a>
+            </li>
+            <li class="selection-options-items">
+              <a href="">
+                <i class="header-selection-icon fas fa-gift"></i>
+                <span>KHUYẾN MẠI</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid__header-user__about">
+          <i class="grid__header-user__about-icon fas fa-user"></i>
+          <a href="">
+            <i class="grid__header-user__about-icon fas fa-shopping-cart">
+              <div class="grid__header-user__about-icon-notify">0</div>
+            </i>
+          </a>
+        </div>
+      </div>
+      <div class="rps__menu-list">
+        <div class="mb-menu-close-btn">
+          <button>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="rps-selection-options">
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon fas fa-assistive-listening-systems"></i>
+              <span>TƯ VẤN</span>
+            </a>
+          </li>
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon far fa-newspaper"></i>
+              <span>TIN TỨC</span>
+            </a>
+          </li>
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon fas fa-laptop"></i>
+              <span>LAPTOP</span>
+            </a>
+          </li>
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon fas fa-desktop"></i>
+              <span>PC-WORKSTATION</span>
+            </a>
+          </li>
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon fas fa-headphones"></i>
+              <span>LINH KIỆN</span>
+
+            </a>
+          </li>
+          <li class="rps-selection-options-items">
+            <a href="">
+              <i class="rps-header-selection-icon fas fa-gift"></i>
+              <span>KHUYẾN MẠI</span>
+            </a>
+          </li>
+        </ul>
+        <div class="rps-boundary"></div>
+        <div class="rps-user__about">
+          <i class="rps-user__about-icon fas fa-user"></i>
+          <a href="">
+            <i class="rps-user__about-icon fas fa-shopping-cart">
+              <div class="rps-user__about-icon-notify">0</div>
+            </i>
+          </a>
+        </div>
+      </div>
+
+      <script>
+        const menuBtn = document.querySelector('.mb-menu-btn button')
+        const closeMenuBtn = document.querySelector('.mb-menu-close-btn button')
+        const mbMenu = document.querySelector('.rps__menu-list')
+
+        menuBtn.addEventListener('click', () => {
+          mbMenu.classList.add('active')
+        })
+
+        closeMenuBtn.addEventListener('click', () => {
+          mbMenu.classList.remove('active')
+        })
+
+      </script>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div id='detail-page'>
+    <div class='container'>
+      <div class="detail-container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+        <div class='detail-body'>
+          <div class="main-info">
+            <div class="image-container">
+              <img src='./img/product1.png' alt='' />
+            </div>
+            <div class="main-info-detail">
+              <h1 class='detail-title'>
+                Think pad Extreme
+              </h1>
+              <h5 class='detail-code'>
+                Item code: <i>MH370MALAYSIAAIRLINE</i>
+              </h5>
+              <h5 class='detail-producer'>
+                Producer: <i>Thinkpad</i>
+              </h5>
+              <h5 class='detail-producer'>
+                Status: <i class='true'>In stock</i>
+              </h5>
+              <h3>Price: 45000000đ</h3>
+              <button title='Add to cart'><i class="fas fa-shopping-cart"></i></button>
+              <button>Quick buy</i></button>
+              
+            </div>
+          </div>
+
+          <div class="description">
+            <hr />
+            <div class='desc-container'>
+              <h1>Hàng việt nam chất lượng cao</h1>
+              <p>Cause you only need the light when its burning low</p>
+              <p>Cause you only need the light when its burning low</p>
+              <p>Cause you only need the light when its burning low</p>
+              <p>Cause you only need the light when its burning low</p>
+              <p>Cause you only need the light when its burning low</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="app__footer">
+    <div class="footer__container wide-screen">
+      <div class="footer1">thinkpro</div>
+      <div class="footer2">
+        <h3 class="footer2-title">
+          Công ty TNHH Công nghệ Think Việt Nam
+        </h3>
+        <p>
+          Số ĐKKD 0107273909 do Sở KHĐT Thành phố Hà Nội cấp ngày 30/12/2015
+        </p>
+        <p>
+          Người đại diện: Trần Văn Long
+        </p>
+        <p>
+          Địa chỉ: Số 105/562 Đường Láng, P.Láng Hạ, Q.Đống Đa, TP.Hà Nội
+        </p>
+        <p>
+          Copyright © 2018 Think Vietnam. All Rights Reserved. Designed by firefly.vn
+        </p>
+      </div>
+      <div class="footer3">
+        <h3 class="footer3-title">
+          HỆ THỐNG CỬA HÀNG
+        </h3>
+        <ul>
+          <a href="">
+            <li>
+              TP HCM: Số 62 Duy Tân, Phường 15, Q.Phú Nhuận, TP HCM
+            </li>
+          </a>
+          <a href="">
+            <li>Hà Nội: Số 105 ngõ 562 đường Láng, P. Láng Hạ, Q. Đống Đa, Hà Nội
+            </li>
+          </a>
+          <a href="">
+            <li>
+              Hà Nội: 69 Phố Vọng, Phường Đồng Tâm, Quận Hai Bà Trưng, TP.Hà Nội
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

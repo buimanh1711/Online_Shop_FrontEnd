@@ -26,3 +26,31 @@ body{
         transform: translateX(0%);
     }
 }
+
+.breadcrumb {
+    margin-top: 12px;
+}
+
+.main__ads img {
+    width: 100%;
+    aspect-ratio: 3;
+    object-fit: cover;
+    margin-top: 12px;
+}
+
+button {
+    outline: none;
+}
+
+p {
+    font-size: 1rem;
+}
+:root {
+    --primary-color: #27bece;
+    --primary-font: "Roboto", sans-serif;
+    --text-color: #666;
+    --text-bold-color: #424242;
+    --button-background-color: #e7edf1;
+    --border-color: rgba(0, 0, 0, 0.05);
+    --primary-color-2: #1b283e;
+}

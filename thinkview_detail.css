@@ -131,6 +131,7 @@
     height: 60px;
     border-left: solid 1px #81F7D8;
     padding-left: 20px;
+    margin-right: 12px;
 }
 
 /* =======RPS MENU========== */
@@ -318,74 +319,6 @@
     margin-top: 24px;
 }
 
-.main__ads {
-    height: 250px;
-    display: flex;
-}
-
-.main__ads-item-horizontal {
-    width: 70%;
-    height: 250px;
-    background: yellow;
-    position: relative;
-}
-
-.big_ads {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-}
-
-.main__ads-item-vertical-content {
-    box-sizing: border-box;
-    padding: 5px;
-}
-
-.main-vertical-ads-pic {
-    height: 100%;
-    width: 100%;
-}
-
-.main__ads-slide {
-    position: absolute;
-    height: 44px;
-    width: 40px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none;
-    animation: appear 0.1s;
-    outline: none;
-}
-
-.main__ads-slide-next {
-    right: 20px;
-}
-
-.main__ads-slide-previous {
-    left: 20px;
-}
-
-.main__ads-slide-icon {
-    font-size: 30px;
-    opacity: 50%;
-    color: white;
-}
-
-.main__ads-item-vertical {
-    width: 30%;
-    height: 250px;
-}
-
-.main__ads-item-vertical-content {
-    height: 50%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .main__suggestion {
     font-size: 17px;
     font-family: var(--primary-font);
@@ -542,7 +475,6 @@
 .product-price {
     color: red;
     font-weight: bold;
-    text-align: center;
 }
 
 .product-img {
