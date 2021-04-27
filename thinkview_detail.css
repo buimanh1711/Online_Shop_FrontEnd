@@ -300,6 +300,54 @@
     cursor: pointer;
 }
 
+.grid__header-user__about button {
+    position: relative;
+    outline: none;
+}
+
+.grid__header-user__about ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: -50%;
+    top: 48px;
+}
+
+.grid__header-user__about button:hover ul {
+    display: block
+}
+
+.grid__header-user__about ul::before {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    top: -20;
+    top: -19px;
+    right: 58px;
+}
+
+.grid__header-user__about li a {
+    color: var(--text-color);
+    padding: 8px 12px;
+    background: white;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+}
+
+.grid__header-user__about li a:hover {
+    background: rgb(243, 242, 242);
+    transition: ease .3s;
+
+}
+
+.grid__header-user__about li a i {
+    margin-right: 8px;
+}
+
 .boundary {
     margin-top: 24px !important;
     margin-bottom: 32px !important;
